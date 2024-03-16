@@ -13,3 +13,9 @@
 //object
 //typeOf null => object
 //typeOf undefined => undefined
+
+//Primitive - Call by value
+// 7 types - String, Number, Boolean, null, undefined, Symbol, BigInt
+
+//Reference type (non primitive type)
+// Arrays, Objects, Functions
