@@ -46,5 +46,10 @@ let subjects = {
   sub3: "social",
   sub4: "english",
 };
-console.log(Array.from(Object.values(subjects)));
-console.log(Array.from(Object.keys(subjects)));
+// console.log(Array.from(Object.values(subjects)));
+// console.log(Array.from(Object.keys(subjects)));
+
+//Reduce method on Arrays
+let scores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const res = scores.reduce((acc, curr) => acc * curr, 1);
+console.log(res);

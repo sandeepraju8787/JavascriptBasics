@@ -68,3 +68,35 @@ let allKeys = Object.keys(user);
 // allKeys.map((key) => console.log(`the key is ${key}`));  //can be used in a similar fashion to create table headers
 
 console.log(user.hasOwnProperty("isRegistered")); // check if the object has this property or not.
+
+//Reduce method to add shopping cart value from an object
+const cart = [
+  {
+    id: 1,
+    itemName: "data science course",
+    price: 299,
+  },
+  {
+    id: 2,
+    itemName: "data science course",
+    price: 199,
+  },
+  {
+    id: 3,
+    itemName: "data science course",
+    price: 99,
+  },
+  {
+    id: 4,
+    itemName: "data science course",
+    price: 399,
+  },
+  {
+    id: 5,
+    itemName: "data science course",
+    price: 1299,
+  },
+];
+
+const finalAmout = cart.reduce((acc, item) => acc + item.price, 0);
+console.log(`Your total bill is : Rs${finalAmout}`);
